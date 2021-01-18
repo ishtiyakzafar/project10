@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!----------- title bar start ------------>
+    <div class="titleBar container-fluid">
+      <div class="tileBarLeft">
+        <div class="py-1">
+          Call us toll free: <span><a href="#">+1-541-754-3010</a></span>
+        </div>
+
+        <div class="lang py-1">
+          <span
+            ><img
+              src="./images/earth-icon.png"
+              alt="lang.jpg"
+              class="px-4" />English<i class="px-4 fas fa-caret-down"></i
+          ></span>
+        </div>
+      </div>
+      <div class="tileBarRight">
+        <div class="py-1">
+          Email:
+          <span><a href="#">contact@example.com</a></span>
+        </div>
+
+        <div class="py-1">
+          <img src="./images/facebook.png" alt="lang.jpg" />
+          <img src="./images/twitter.png" alt="lang.jpg" />
+          <img src="./images/linkedin.png" alt="lang.jpg" />
+          <img src="./images/instagram.png" alt="lang.jpg" />
+        </div>
+      </div>
+    </div>
+    <!----------- title bar end ------------>
+
+    <!----------- homepage start ------------>
+    <section class="homePage">
+      <!----------- navbar start ------------>
+      <div class="container-fluid text-light navMenu">
+        <div class="logo">
+          <img src="./images/logo-with-img.svg" alt="lang.jpg" />
+        </div>
+        <div class="menu">
+          <li class="home hide">Home</li>
+          <li class="hide">Auctions</li>
+          <li class="hide">Buy Now</li>
+          <li class="hide">Support</li>
+          <li class="hide">About Us</li>
+          <li><button>Sell with Us</button></li>
+          <li><button>Login</button></li>
+        </div>
+      </div>
+      <!----------- navbar end ------------>
+
+      <!----------- homeContent start ------------>
+      <div class="homeContent">
+        <h1>
+          Online Auctions<br />
+          New, Used and Damaged
+        </h1>
+        <p>
+          Sign up for your Haraj Express membership and start bidding and
+          winning auctions.
+        </p>
+        <button class="aucBtn">View Auctions</button>
+        <div class="searchBox">
+          <div class="dropdown">
+            <p>Choose Category<i class="px-5 fas fa-caret-down"></i></p>
+            <div class="dropdown-content">
+              <a href="#">Car</a>
+              <a href="#">Boat</a>
+              <a href="#">motorcycle</a>
+            </div>
+          </div>
+          <div>
+            <input type="text" placeholder="Search Keyword..." />
+          </div>
+          <div><button class="searchBtn">SEARCH</button></div>
+        </div>
+      </div>
+      <!----------- homeContent end ------------>
+
+      <!----------- homeProduct start ------------>
+      <div class="homeProduct container">
+        <div class="row g-4 d-flex justify-content-center">
+          <div class="col-md-3 col-11">
+            <div class="card homeCard">
+              <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+              <div class="text-center cardInfo p-3">
+                <h5 class="card-title py-2">JET SKI</h5>
+                <a href="#" class="">7 Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-11">
+            <div class="card homeCard">
+              <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+              <div class="text-center cardInfo p-3">
+                <h5 class="card-title py-2">JET SKI</h5>
+                <a href="#" class="">7 Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-11">
+            <div class="card homeCard">
+              <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+              <div class="text-center cardInfo p-3">
+                <h5 class="card-title py-2">JET SKI</h5>
+                <a href="#" class="">7 Product</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-11">
+            <div class="card homeCard">
+              <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+              <div class="text-center cardInfo p-3">
+                <h5 class="card-title py-2">JET SKI</h5>
+                <a href="#" class="">7 Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------- homeProduct end ------------>
+
+      <!----------- auctionSection start ------------>
+      <div class="auctionSection container">
+        <div class="text-center">
+          <h2>Latest Auctions</h2>
+          <p>simply dummy text of the printing and typesetting</p>
+          <div class="d-flex justify-content-center">
+            <h3></h3>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-between py-4">
+          <div class="col-md-5 col-12 card gy-5 g-0">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                ></li>
+                <li
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/aucCar4.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/aucCar1.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/aucCar3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5>Mustand v8 enginer for auction</h5>
+              <h5>Current Bid: $ 250</h5>
+              <button class="bidNowBtn">BID NOW</button>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-12 card gy-5 g-0">
+            <div
+              id="carouselExampleIndicators2"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselExampleIndicators2"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></li>
+                <li
+                  data-bs-target="#carouselExampleIndicators2"
+                  data-bs-slide-to="1"
+                ></li>
+                <li
+                  data-bs-target="#carouselExampleIndicators2"
+                  data-bs-slide-to="2"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./images/aucCar5.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/aucCar6.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./images/aucCar3.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators2"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5>Mustand v8 enginer for auction</h5>
+              <h5>Current Bid: $ 250</h5>
+              <button class="bidNowBtn">BID NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!----------- auctionSection end ------------>
+
+      <!----------- Latest Direct Sell start ------------>
+      <div class="auctionSection container pb-4">
+        <div class="text-center py-5">
+          <h2>Latest Direct Sell</h2>
+          <p>This is dummy text of the printing and typesetting</p>
+          <div class="d-flex justify-content-center">
+            <h3></h3>
+          </div>
+        </div>
+
+        <div class="slick_slide multiple-items">
+          <div class="item">
+            <div class="setCard">
+              <div class="card homeCard">
+                <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+                <div class="card-body">
+                  <h5>Abc</h5>
+                  <h5>Price: $ 250</h5>
+                  <button class="bidNowBtn">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="setCard">
+              <div class="card homeCard">
+                <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+                <div class="card-body">
+                  <h5>Abc</h5>
+                  <h5>Price: $ 250</h5>
+                  <button class="bidNowBtn">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="setCard">
+              <div class="card homeCard">
+                <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+                <div class="card-body">
+                  <h5>Abc</h5>
+                  <h5>Price: $ 250</h5>
+                  <button class="bidNowBtn">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="setCard">
+              <div class="card homeCard">
+                <img src="./images/jetski.jpg" class="img-fluid" alt="..." />
+                <div class="card-body">
+                  <h5>Abc</h5>
+                  <h5>Price: $ 250</h5>
+                  <button class="bidNowBtn">BUY NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------- Latest Direct Sell end ------------>
+
+      <!----------- vendorSection start ------------>
+      <div class="container py-5">
+        <div class="row gy-4 g-0 d-flex justify-content-between">
+          <div
+            class="col-xl-4 text-white d-flex flex-column vendorImg justify-content-center align-items-center"
+          >
+            <h3>VENDORS</h3>
+            <p>4 Vendors</p>
+            <button>VIEW ALL</button>
+          </div>
+
+          <div class="col-xl-8 col-12">
+            <div class="row mb-3">
+              <div class="col-md-6 col-12">
+                <div class="card mb-3">
+                  <div class="row">
+                    <div class="col-md-4 col-4 clientImg">
+                      <img src="./images/profile-img.jpg" alt="..." />
+                    </div>
+                    <div class="col-md-8 col-8 p-4">
+                      <h5 class="">Sharath Samala</h5>
+                      <h5 class="clientIven">Product Inventory : 21</h5>
+                      <p>Rating:(5 Review)</p>
+                      <button class="clientBtn">VIEW VENDOR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="card mb-3">
+                  <div class="row">
+                    <div class="col-md-4 col-4 clientImg">
+                      <img src="./images/profile-img.jpg" alt="..." />
+                    </div>
+                    <div class="col-md-8 col-8 p-4">
+                      <h5 class="">Sharath Samala</h5>
+                      <h5 class="clientIven">Product Inventory : 21</h5>
+                      <p>Rating:(5 Review)</p>
+                      <button class="clientBtn">VIEW VENDOR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="card mb-3">
+                  <div class="row">
+                    <div class="col-md-4 col-4 clientImg">
+                      <img src="./images/profile-img.jpg" alt="..." />
+                    </div>
+                    <div class="col-md-8 col-8 p-4">
+                      <h5 class="">Sharath Samala</h5>
+                      <h5 class="clientIven">Product Inventory : 21</h5>
+                      <p>Rating:(5 Review)</p>
+                      <button class="clientBtn">VIEW VENDOR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="card mb-3">
+                  <div class="row">
+                    <div class="col-md-4 col-4 clientImg">
+                      <img src="./images/profile-img.jpg" alt="..." />
+                    </div>
+                    <div class="col-md-8 col-8 p-4">
+                      <h5 class="">Sharath Samala</h5>
+                      <h5 class="clientIven">Product Inventory : 21</h5>
+                      <p>Rating:(5 Review)</p>
+                      <button class="clientBtn">VIEW VENDOR</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------- vendorSection end ------------>
+
+      <!----------- contactUsSection start ------------>
+      <div class="auctionSection container pb-4">
+        <div class="text-center py-5">
+          <h2>Contact Us</h2>
+          <p>simply dummy text of the printing and typesetting</p>
+          <div class="d-flex justify-content-center">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-7 col-11 mx-auto contactForm">
+            <form>
+              <h5>Message Now</h5>
+              <input type="text" placeholder="First name" />
+              <input class="lname" type="text" placeholder="Last name" /><br />
+              <input type="text" placeholder="Email address" />
+              <input class="subject" type="text" placeholder="Subject" /><br />
+              <textarea placeholder="Message"></textarea><br />
+              <button type="submit">SEND NOW</button>
+            </form>
+          </div>
+          <div
+            class="col-md-5 col-11 mx-auto d-flex justify-content-center align-items-center p-4"
+          >
+            <img src="./images/map-img.png" class="img-fluid" alt="map.png" />
+          </div>
+        </div>
+      </div>
+      <!----------- contactUsSection end ------------>
+
+      <!----------- ourClient start ------------>
+      <div class="brandLogo container py-5">
+        <div>
+          <img src="./images/audi-logo.png" class="img-fluid" alt="bLogo" />
+        </div>
+        <div>
+          <img
+            src="./images/mvp-automotive-logo.png"
+            class="img-fluid"
+            alt="bLogo"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/auto-speed-logo.png"
+            class="img-fluid"
+            alt="bLogo"
+          />
+        </div>
+        <div>
+          <img
+            src="./images/truck-transport-logo.png"
+            class="img-fluid"
+            alt="bLogo"
+          />
+        </div>
+      </div>
+      <!----------- ourClient end ------------>
+
+      <!----------- fotterSection start ------------>
+      <footer class="styleFotter">
+        <div class="container fotterDiv">
+          <div class="logo">
+            <img src="./images/logo-with-img.svg" alt="lang.jpg" />
+            <li><a href="#">Contact@example.com</a></li>
+            <li><a href="#">+1-541-754-3010</a></li>
+          </div>
+          <div class="navig">
+            <h4 class="text-light">Navigation</h4>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Auctions</a></li>
+            <li><a href="#">Buy Now</a></li>
+            <li><a href="#">Support</a></li>
+          </div>
+          <div class="HeadOffice">
+            <h4 class="text-light">Head Office</h4>
+            <li><a href="#">Contact@example.com</a></li>
+            <li><a href="#">+1-541-754-3010</a></li>
+            <li><a href="#">Saudi Arabia</a></li>
+          </div>
+          <div class="socialIcon">
+            <img src="./images/facebook.png" alt="lang.jpg" />
+            <img src="./images/twitter.png" alt="lang.jpg" />
+            <img src="./images/linkedin.png" alt="lang.jpg" />
+            <img src="./images/instagram.png" alt="lang.jpg" />
+          </div>
+        </div>
+        <div class="container-fluid rights text-center text-light">
+          <p>
+            Ⓒ <span class="text-danger">Zapone Solutions Pvt Ltd.</span> All
+            Rights Reserved
+          </p>
+        </div>
+      </footer>
+      <!----------- fotterSection end ------------>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./slick.min.js"></script>
+
+    <script>
+      $(function () {
+        $(".multiple-items").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          prevArrow:
+            '<span class="priv_arrow"><i class="fas fa-arrow-left"></i></span>',
+          nextArrow:
+            '<span class="next_arrow"><i class="fas fa-arrow-right"></i></span>',
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Montserrat-light";
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat-medium";
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat-semibold";
+  src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-extrabold";
+  src: url(./fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat-black";
+  src: url(./fonts/Montserrat-Black.ttf);
+}
+/*************style title bar start************/
+.titleBar {
+  font-family: "Montserrat-regular";
+  color: #636e72;
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 15px;
+}
+.titleBar a {
+  color: #636e72;
+  text-decoration: none;
+  transition: 0.4s;
+  letter-spacing: 0.9px;
+}
+.titleBar a:hover {
+  color: #d63031;
+}
+.tileBarLeft {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+}
+.tileBarRight {
+  width: 37%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+}
+.lang {
+  cursor: pointer;
+}
+/*************style title bar end************/
+
+.homePage {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*************style navbar start************/
+.navMenu {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 230px;
+  height: 100px;
+  cursor: pointer;
+}
+.logo {
+  text-align: center;
+}
+.menu {
+  font-family: "Montserrat-semibold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  color: #d63031;
+}
+.menu li {
+  list-style: none;
+  padding-left: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.menu li:hover {
+  color: #d63031;
+}
+.navMenu button,
+.contactForm button {
+  border: none;
+  outline: none !important;
+  background: #d63031;
+  width: 140px;
+  height: 45px;
+  border-radius: 3px;
+  transition: 0.4s;
+  color: #fff;
+  font-size: 18px;
+}
+.menu li button:hover,
+.searchBox button:hover {
+  background: #ff7675;
+}
+/*************style navbar end************/
+
+/*************style homecontent start************/
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homeContent h1 {
+  font-family: "Montserrat-semibold";
+  font-size: 65px;
+  text-align: center;
+  color: #fff;
+}
+.homeContent p {
+  font-family: "Montserrat-medium";
+  padding-top: 10px;
+  color: #fff;
+}
+.aucBtn {
+  padding: 10px 35px;
+  border: none;
+  outline: none !important;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  font-family: "Montserrat-semibold";
+}
+.aucBtn:hover {
+  color: #d63031;
+}
+/*************style homecontent end************/
+
+/*************style dropdown start************/
+.dropdown {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 48px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown p {
+  padding-left: 25px;
+  cursor: pointer;
+  color: #636e72;
+  text-align: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 310px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding-top: 6px;
+}
+.dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #d63031;
+  color: #fff;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*************style dropdown end************/
+
+/*************style searchBox start************/
+.searchBox {
+  /* border: 1px solid red; */
+  width: 845px;
+  background: #fff;
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBox button {
+  /* border: 1px solid blue !important; */
+  border: none;
+  outline: none !important;
+  background: #d63031;
+  border-radius: 3px;
+  transition: 0.4s;
+  color: #fff;
+  height: 48px;
+  width: 120px;
+  margin-right: 6px;
+}
+
+.searchBox input {
+  /* border: 1px solid red; */
+  width: 400px;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-left: 1px solid #b2bec3;
+  padding: 25px;
+}
+/*************style searchBox end************/
+
+/*************style homeProduct start************/
+.homeProduct {
+  padding: 45px 0;
+}
+.card {
+  border-radius: 0px !important;
+}
+.homeCard {
+  padding: 6px;
+  color: black;
+  transition: 0.4s;
+}
+.cardInfo a {
+  text-decoration: none;
+  padding: 7px 30px;
+  border: none;
+  outline: none !important;
+  border-radius: 25px;
+  background: black;
+  color: #fff;
+  font-family: "Montserrat-medium";
+}
+.homeCard:hover {
+  border: 1px solid #d63031 !important;
+}
+.cardInfo a:hover {
+  background: #d63031;
+  color: #fff;
+}
+/*************style homeProduct end************/
+
+/*************style auctionSection start************/
+.auctionSection h3 {
+  width: 80px;
+  border-top: 2px solid #d63031;
+}
+.bidNowBtn,
+.clientBtn {
+  border: none;
+  outline: none !important;
+  background: #d63031;
+  border-radius: 3px;
+  transition: 0.4s;
+  color: #fff;
+  height: 35px;
+  width: 120px;
+}
+/*************style auctionSection end************/
+
+/***************style Latest Direct Sell start**********/
+.slick_slide {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.slick_slide .item {
+  margin: 10px !important;
+  outline: none !important;
+}
+.sliderrrr {
+  padding: 0 83px !important;
+}
+.slick_slide .priv_arrow,
+.slick_slide .next_arrow {
+  width: 100px !important;
+  height: 50px !important;
+  line-height: 50px;
+  text-align: center;
+  color: #d63031;
+  outline: none !important;
+  border: none;
+  border: 1px solid #dcdde1;
+}
+/***************style Latest Direct Sell end**********/
+
+/*************style vendorSection start************/
+.clientImg img {
+  width: 120px;
+  height: 187px;
+}
+.clientIven {
+  color: #d63031;
+}
+
+.vendorImg {
+  height: 409px;
+  width: 340px !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/vendors-card-img.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/*************style vendorSection end************/
+
+/*************style contactUsSection start************/
+.contactForm input {
+  width: 290px;
+  height: 50px;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7;
+}
+.contactForm h5 {
+  margin-bottom: 17px;
+}
+.contactForm textarea {
+  resize: none;
+  width: 600px;
+  height: 150px !important;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-bottom: 1px solid #bdc3c7;
+}
+.contactForm textarea:hover,
+.contactForm input:hover {
+  border-bottom: 1px solid #d63031;
+  transition: 0.9s all;
+}
+.contactForm {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px;
+}
+.lname,
+.subject {
+  margin-left: 15px;
+}
+
+/*************style contactUsSection end************/
+
+/*************style ourClient start************/
+.brandLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*************style ourClient end************/
+
+/*************style footer start************/
+.styleFotter {
+  background: black;
+}
+.styleFotter li {
+  list-style: none;
+}
+.styleFotter li a {
+  text-decoration: none;
+  color: #636e72;
+}
+.fotterDiv {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+}
+.rights {
+  height: 100px;
+  background: #272727;
+  /* line-height: 100px; */
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+}
+/*************style footer end************/
+
+/* media query */
+
+@media (max-width: 1200px) {
+  .tileBarRight {
+    display: block;
+    text-align: right;
+  }
+  .tileBarLeft {
+    display: block;
+    text-align: left;
+  }
+  .hide {
+    display: none;
+  }
+  .homeContent h1 {
+    font-size: 50px;
+  }
+  .searchBox {
+    width: 700px;
+  }
+  .searchBox input {
+    width: 299px;
+  }
+  .dropdown-content {
+    width: 275px;
+  }
+  .vendorImg {
+    height: 310px;
+    width: 100% !important;
+  }
+  .contactForm input {
+    width: 240px;
+  }
+  .contactForm textarea {
+    width: 500px;
+  }
+  /* .brandLogo img {
+    width: 150px;
+    height: auto;
+  } */
+}
+
+@media (max-width: 992px) {
+  .cardInfo a {
+    padding: 7px 12px;
+  }
+  .contactForm input {
+    width: 189px;
+  }
+  .contactForm textarea {
+    width: 400px;
+  }
+  .brandLogo,
+  .fotterDiv {
+    flex-wrap: wrap;
+  }
+  .brandLogo img {
+    padding: 20px;
+  }
+  .logo,
+  .navig,
+  .HeadOffice,
+  .socialIcon {
+    padding: 40px;
+  }
+  .fotterDiv {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleBar {
+    display: block;
+    text-align: center;
+    height: 150px;
+  }
+  .tileBarLeft,
+  .tileBarRight {
+    width: 100%;
+    text-align: center;
+  }
+  .navMenu {
+    display: block;
+  }
+  .homeContent h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .homeContent p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .searchBox {
+    width: 80%;
+    display: block;
+    padding: 10px;
+  }
+  .searchBox button,
+  .searchBox input,
+  .dropdown,
+  .dropdown-content {
+    width: 100%;
+  }
+  .searchBox input {
+    border: 1px solid #b2bec3;
+    margin: 10px 0;
+  }
+  .logo img {
+    width: 150px;
+    height: 70px;
+    cursor: pointer;
+  }
+  .navMenu {
+    padding-top: 5px;
+  }
+  .aucBtn {
+    padding: 10px 35px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+  .homePage {
+    height: 120vh;
+  }
+  .contactForm input {
+    width: 100%;
+  }
+  .contactForm textarea {
+    width: 100%;
+  }
+  .lname,
+  .subject {
+    margin-left: 0px;
+  }
+  .brandLogo {
+    display: block;
+    text-align: center;
+  }
+  .fotterDiv {
+    display: block;
+    text-align: center;
+  }
+  .logo,
+  .navig,
+  .HeadOffice,
+  .socialIcon {
+    padding: 10px;
+  }
+}
